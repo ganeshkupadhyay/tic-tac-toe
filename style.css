@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* changed background color to gradient */
+    background: linear-gradient(to right, #60c1f6, #a0d9f7);
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* added margin and padding */
+    /* margin: 2rem;
+    padding: 2rem; */
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: rgb(255, 193, 148);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    /* changed font family and font weight */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+    /* changed color to red for X */
+    color: #e60f08;
+    /* added text shadow */
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    /* added transition and hover effect */
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    border: none;
+
+    :hover {
+        transform: scale(1.1);
+    }
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    /* added transition and hover effect */
+    transition: all 0.3s ease;
+
+    :hover {
+        background-color: #fff;
+        color: #191913;
+    }
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    /* added transition and hover effect */
+    transition: all 0.3s ease;
+
+    :hover {
+        background-color: #fff;
+        color: #191913;
+    }
+}
+
+#msg {
+    /* changed color to purple for O */
+    color: #38038c;
+    font-size: 7vmin;
+    /* changed font family and font weight */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold;
+    /* added text shadow */
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
